@@ -16,17 +16,14 @@ var APP = angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch',
-    'duScroll',
+    'ngTouch'
   ]);
 
   APP.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('main', {
         templateUrl: 'views/main.html',
-        url: '/',
-        controller: 'MainCtrl',
-        controllerAs: 'main',
+        url: '/'
       });
-    $urlRouterProvider.otherwise("/")
+    $urlRouterProvider.otherwise("/"); 
   });
