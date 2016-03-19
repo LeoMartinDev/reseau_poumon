@@ -8,13 +8,11 @@
  * Controller of the remonApp
  */
 angular.module('remonApp')
-  .controller('MainCtrl', function () {
+  .controller('MainCtrl', ['$scope', function ($scope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
 
-
-
-  });
+  }]);

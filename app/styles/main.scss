@@ -20,61 +20,29 @@ body {
   height: 100px;
   border-bottom: 10px solid #268774;
   line-height: 90px;
-  .nav-menu {
-	  a {
-			color: rgb(82, 198, 179);
-			text-transform: uppercase;
-			border: solid 2px rgb(82, 198, 179);
-			padding: 15px;
-			cursor: pointer;
-			margin-right: 50px; 
-			span {
-				display:inline-block; 
-				width:140px; 
-			}
-	  }
-	  a.selected, a:hover {
-			color: white;
-			background: rgb(82, 198, 179);
-	  }
+  button {
+    height: auto;
   }
 }
 
-.home-logo{
-	background:url("../resources/logo.png"); 
-	width: 80px;
-    height: 80px;
-    background-size: cover;
-    display: block; 
-}
-
-.nav-title {
-	color:rgb(82, 198, 179); 
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 1.5em;
-	
-}
-
-.hero {
+#hero {
   height: calc(80vh - 100px);
   background-color: #fff;
 }
 
-.menu {
+#menu {
   height: 20vh;
   button {
-    border-style: solid;
-    border-width: 8px;
-    border-color: #fff;
-    background-color: transparent;
-    text-transform: uppercase;
     height: 15vh;
-    min-width: 300px;
-    color: #fff;
-    font-size: 3em;
-    outline:none;
+    max-height: 15vh;
+    width: 450px;
+    max-width: 450px;
+    font-size: 2.5em;
   }
+}
+
+#information {
+  height: 100vh;
 }
 
 h1 {
@@ -86,4 +54,29 @@ h1 {
   display: inline-block;
   vertical-align: middle;
   float: none;
+}
+
+.remon_btn {
+  text-align: center;
+  border: 8px solid;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.remon_btn_default {
+    border-color: #fff;
+    color: #fff;
+    background-color: #52C6B3;
+}
+
+.remon_btn_inverse {
+  border-color: #52C6B3;
+  color: #52C6B3;
+  background-color: #fff;
+}
+
+.v-align {
+  transform: translateY(-50%);
+  top: 50%;
+  position: relative;
 }
