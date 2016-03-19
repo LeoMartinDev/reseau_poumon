@@ -20,18 +20,40 @@ body {
   height: 100px;
   border-bottom: 10px solid #268774;
   line-height: 90px;
-  a {
-		color: rgb(82, 198, 179);
-		text-transform: uppercase;
-		border: solid 2px rgb(82, 198, 179);
-		padding: 15px;
-		cursor: pointer;
-		margin-right: 50px; 
+  .nav-menu {
+	  a {
+			color: rgb(82, 198, 179);
+			text-transform: uppercase;
+			border: solid 2px rgb(82, 198, 179);
+			padding: 15px;
+			cursor: pointer;
+			margin-right: 50px; 
+			span {
+				display:inline-block; 
+				width:140px; 
+			}
+	  }
+	  a.selected, a:hover {
+			color: white;
+			background: rgb(82, 198, 179);
+	  }
   }
-  a.selected,a:hover {
-		color: white;
-		background: rgb(82, 198, 179);
-  }
+}
+
+.home-logo{
+	background:url("../resources/logo.png"); 
+	width: 80px;
+    height: 80px;
+    background-size: cover;
+    display: block; 
+}
+
+.nav-title {
+	color:rgb(82, 198, 179); 
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.5em;
+	
 }
 
 .hero {
