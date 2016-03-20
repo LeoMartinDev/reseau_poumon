@@ -14,13 +14,13 @@ var APP = angular
     'ngAnimate',
     'ngCookies',
     'ngResource',
-    'ngRoute',
     'ngSanitize',
     'ngTouch',
     'duScroll',
   ]);
 
-  APP.config(function ($stateProvider, $urlRouterProvider) {
+APP
+  .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('main', {
         templateUrl: 'views/main.html',

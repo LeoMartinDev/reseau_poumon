@@ -25,11 +25,11 @@ body {
 		a {
 			color: rgb(82, 198, 179);
 			cursor: pointer;
-			margin-right: 20px; 
+			margin-right: 20px;
 		}
-		
+
   }
-  
+
   .nav-menu {
 	  a {
 			color: rgb(82, 198, 179);
@@ -37,10 +37,10 @@ body {
 			border: solid 2px rgb(82, 198, 179);
 			padding: 15px;
 			cursor: pointer;
-			margin-right: 50px; 
+			margin-right: 50px;
 			span {
-				display:inline-block; 
-				width:140px; 
+				display:inline-block;
+				width:140px;
 			}
 	  }
 	  a.selected, a:hover {
@@ -51,24 +51,33 @@ body {
 }
 
 .home-logo{
-	background:url("../resources/logo.png"); 
+	background:url("../images/logo.png");
 	width: 80px;
-    height: 80px;
-    background-size: cover;
-    display: block; 
+  height: 80px;
+  background-size: cover;
+  display: block;
 }
 
 .nav-title {
-	color:rgb(82, 198, 179); 
+	color: #268774;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 1.5em;
-	
+	font-size: 2em;
+
 }
 
 #hero {
   height: calc(80vh - 100px);
   background-color: #fff;
+}
+
+.hero_title {
+  line-height: 100px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  color: #52C6B3;
+  font-size: 5em;
 }
 
 #menu {
@@ -78,17 +87,7 @@ body {
     max-height: 15vh;
     width: 450px;
     max-width: 450px;
-    font-size: 2.5em;
   }
-}
-
-#information {
-  height: 100vh;
-}
-
-h1 {
-  color: #52C6B3;
-  font-size: 5em;
 }
 
 .vcenter {
@@ -110,14 +109,31 @@ h1 {
     background-color: #52C6B3;
 }
 
+.remon_btn_default:hover {
+  color: #52C6B3;
+  background-color: #fff;
+}
+
 .remon_btn_inverse {
   border-color: #52C6B3;
   color: #52C6B3;
   background-color: #fff;
 }
 
+.remon_btn_inverse:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
 .v-align {
   transform: translateY(-50%);
   top: 50%;
   position: relative;
+}
+
+.category {
+  font-size: 3em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
 }
