@@ -4,7 +4,7 @@
 
 body {
   padding: 0;
-  background-color: #35BA9E;
+  background-color: #52C6B3;
 }
 
 .browsehappy {
@@ -19,58 +19,62 @@ body {
   position: relative;
   margin-bottom: 0;
   border-radius: 0;
-  height: 90px;
+  height: 100px;
   border-bottom: 10px solid #268774;
   line-height: 90px;
+ .nav-princ {
+		text-align: right;
+		vertical-align: top;
+		display: inline-block;
+		font-weight: bold;
+
+		a {
+			color: rgb(82, 198, 179);
+			cursor: pointer;
+			margin-right: 20px;
+		}
+
+  }
 
   .nav-menu {
-    a {
-      color: #268774;
-      cursor: pointer;
-      text-decoration: none;
-      font-size: 1.8em;
-      padding-left: 20px;
-      font-weight: 500;
-    }
+	  a {
+			color: rgb(82, 198, 179);
+			text-transform: uppercase;
+			border: solid 2px rgb(82, 198, 179);
+			padding: 15px;
+			cursor: pointer;
+			margin-right: 50px;
+			span {
+				display:inline-block;
+				width:140px;
+			}
+	  }
+	  a.selected, a:hover {
+			color: white;
+			background: rgb(82, 198, 179);
+	  }
   }
 }
 
-.home-logo {
-  background: url("../images/logo.png");
-  width: 80px;
-  height: 80px;
-  background-size: cover;
-  display: block;
+.home-logo{
+	background:url("../resources/logo.png");
+	width: 80px;
+    height: 80px;
+    background-size: cover;
+    display: block;
 }
 
 .nav-title {
-  color: #268774;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 2.0em;
-  padding-left: 20px;
+	color:rgb(82, 198, 179);
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.5em;
+
 }
 
 #hero {
   height: calc(80vh - 100px);
   background-color: #fff;
-}
-
-.hero_title {
-  height: calc(80vh - 100px);
-  h1 {
-    font-size: 7.5em;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: auto 0;
-  }
-}
-
-#unite p {
-  text-transform: uppercase;
-  font-size: 1.6em;
-  color: #fff;
 }
 
 #menu {
@@ -84,8 +88,12 @@ body {
   }
 }
 
+#information {
+  height: 100vh;
+}
+
 h1 {
-  color: #35BA9E;
+  color: #52C6B3;
   font-size: 5em;
 }
 
@@ -103,24 +111,15 @@ h1 {
 }
 
 .remon_btn_default {
-  border-color: #fff;
-  color: #fff;
-  background-color: #35BA9E;
-}
-
-.remon_btn_default:hover {
-  color: #35BA9E;
-  background-color: #fff;
+    border-color: #fff;
+    color: #fff;
+    background-color: #52C6B3;
 }
 
 .remon_btn_inverse {
-  color: #35BA9E;
+  border-color: #52C6B3;
+  color: #52C6B3;
   background-color: #fff;
-}
-
-.remon_btn_inverse:hover {
-  color: #fff;
-  background-color: #35BA9E;
 }
 
 .v-align {
@@ -129,104 +128,173 @@ h1 {
   position: relative;
 }
 
-.category {
-  font-size: 2.5em;
-  font-weight: 600;
-  color: #fff;
-  text-transform: uppercase;
-}
 
-#information img {
-  padding-top: 15px;
-}
 
-#information .left {
-  padding-left: 35px;
-}
-
-#information .right {
-  padding-right: 35px;
-}
 
 section.info {
-  color: white;
-  .container-fluid {
-    width: 80%;
-  }
+	color:white;
+	.container-fluid{
+		width:80%;
+	}
 
-  h1 {
-    margin-bottom: 50px;
-    font-size: 4em;
-  }
+	h1 {
+		margin-bottom:50px;
+		font-size:3em;
+	}
 
-  h1, h2 {
-    color: white;
-    text-transform: uppercase;
-  }
+	h1,h2 {
+		color:white;
+		text-transform:uppercase;
+	}
 
-  .info-menu {
-    width: 100%;
-    margin: auto;
-    display: table;
 
-    h3 {
-      font-size: 20px;
-      padding: 0px;
-      margin: 0px;
-    }
+	.info-menu {
+		width: 100%;
+		margin: auto;
+		display: table;
 
-    ul {
-      padding-left: 0px;
-    }
 
-    li.selected {
-      text-decoration: underline;
-    }
+			h3 {
+			   font-size: 20px;
+				padding: 0px;
+				margin: 0px;
+			}
 
-    li {
-      list-style: none;
-      a {
-        color: white;
-        cursor: pointer;
-      }
-    }
+			ul {
+				padding-left: 0px;
+			}
 
-  }
+			li.selected {
+				text-decoration: underline;
+			}
 
-  .info-logo {
-    background: url("../images/patient_blanc.png");
-    width: 100%;
-    height: 90px;
-    background-size: 90px;
-    background-position-x: 20px;
-    background-repeat: no-repeat;
+			li {
+				list-style: none;
+				a {
+					color:white;
+					cursor:pointer;
+				}
+			}
 
-  }
+	}
 
-  .content {
-    background-color: white;
-    color: rgb(82, 198, 179);
 
-    h3 {
-      text-align: center;
 
-      span {
-        background: url("../images/picto_poumon.png");
-        background-repeat: no-repeat;
-        padding-left: 50px;
-        background-size: 30px;
-      }
+	.info-logo {
+		background:url("../resources/patient_blanc.png");
+		width: 100%;
+	    height: 90px;
+		background-size: 90px;
+		background-position-x: 20px;
+		background-repeat: no-repeat;
 
-    }
+	}
 
-    .carte-france {
-      background: url("../images/carte_france.png");
-      width: 100%;
-      height: 600px;
-      background-size: 400px;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-  }
+	.content {
+		background-color:white;
+		color:rgb(82, 198, 179);
+
+		h3 {
+			text-align:center;
+
+			span {
+				background:url("../resources/picto_poumon.png");
+				background-repeat: no-repeat;
+				padding-left: 50px;
+				background-size: 30px;
+			}
+
+		}
+
+		.carte-france {
+			background:url("../resources/carte_france.png");
+			width: 100%;
+			height: 600px;
+			background-size: 400px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+
 
 }
+
+section.parrain {
+	    color: white;
+
+	#imgs {
+		display:none;
+
+	}
+	.container-fluid{
+		width:80%;
+	}
+
+	h1 {
+		margin-bottom:50px;
+		font-size:3em;
+	}
+
+	h1,h2 {
+		color:white;
+		text-transform:uppercase;
+	}
+
+	img {
+		margin-bottom:50px;
+		margin-right:50px;
+		cursor:pointer;
+
+	}
+
+	input {
+		color:black;
+	}
+
+	.form-ok {
+		background-color: #0F8774;
+		height: 26px;
+		display: inline-block;
+		position: absolute;
+		width: 26px;
+		font-size: 26px;
+		text-align: center;
+
+	}
+}
+
+section.bureau {
+	    color: white;
+		h1 {
+		margin-bottom:50px;
+		font-size:3em;
+	}
+
+	h1,h2 {
+		color:white;
+		text-transform:uppercase;
+	}
+
+	.content1 {
+		width:50%;
+		text-align:left;
+		margin:auto;
+	}
+
+	img {
+		width:100% !important;
+	}
+
+		a{
+			padding: 15px;
+			cursor: pointer;
+			margin-right: 50px;
+			span {
+				display:inline-block;
+				width:250px;
+			}
+
+
+	}
+}
+
