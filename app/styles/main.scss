@@ -18,62 +18,52 @@ body {
   position: relative;
   margin-bottom: 0;
   border-radius: 0;
-  height: 100px;
+  height: 90px;
   border-bottom: 10px solid #268774;
   line-height: 90px;
- .nav-princ {
-		text-align: right;
-		vertical-align: top;
-		display: inline-block;
-		font-weight: bold;
-
-		a {
-			color: rgb(82, 198, 179);
-			cursor: pointer;
-			margin-right: 20px;
-		}
-
-  }
 
   .nav-menu {
-	  a {
-			color: rgb(82, 198, 179);
-			text-transform: uppercase;
-			border: solid 2px rgb(82, 198, 179);
-			padding: 15px;
-			cursor: pointer;
-			margin-right: 50px;
-			span {
-				display:inline-block;
-				width:140px;
-			}
-	  }
-	  a.selected, a:hover {
-			color: white;
-			background: rgb(82, 198, 179);
-	  }
+    a {
+      color: #268774;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 1.8em;
+      padding-left:20px;
+      font-weight: 500;
+    }
   }
 }
 
-.home-logo{
-	background:url("../resources/logo.png");
-	width: 80px;
-    height: 80px;
-    background-size: cover;
-    display: block;
+.home-logo {
+  background: url("../images/logo.png");
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  display: block;
 }
 
 .nav-title {
-	color:rgb(82, 198, 179);
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 1.5em;
-
+  color: #268774;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.0em;
+  padding-left: 20px;
 }
 
 #hero {
   height: calc(80vh - 100px);
   background-color: #fff;
+}
+
+.hero_title {
+  height: calc(80vh - 100px);
+  h1 {
+    font-size: 7.5em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto 0;
+  }
 }
 
 #menu {
@@ -85,10 +75,6 @@ body {
     max-width: 450px;
     font-size: 2.5em;
   }
-}
-
-#information {
-  height: 100vh;
 }
 
 h1 {
@@ -110,15 +96,24 @@ h1 {
 }
 
 .remon_btn_default {
-    border-color: #fff;
-    color: #fff;
-    background-color: #52C6B3;
+  border-color: #fff;
+  color: #fff;
+  background-color: #52C6B3;
+}
+
+.remon_btn_default:hover {
+  color: #52C6B3;
+  background-color: #fff;
 }
 
 .remon_btn_inverse {
-  border-color: #52C6B3;
   color: #52C6B3;
   background-color: #fff;
+}
+
+.remon_btn_inverse:hover {
+  color: #fff;
+  background-color: #52C6B3;
 }
 
 .v-align {
@@ -127,93 +122,92 @@ h1 {
   position: relative;
 }
 
-
-
+.category {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
 
 section.info {
-	color:white;
-	.container-fluid{
-		width:80%;
-	}
+  color: white;
+  .container-fluid {
+    width: 80%;
+  }
 
-	h1 {
-		margin-bottom:50px;
-		font-size: 4em;
-	}
+  h1 {
+    margin-bottom: 50px;
+    font-size: 4em;
+  }
 
-	h1,h2 {
-		color:white;
-		text-transform:uppercase;
-	}
+  h1, h2 {
+    color: white;
+    text-transform: uppercase;
+  }
 
+  .info-menu {
+    width: 100%;
+    margin: auto;
+    display: table;
 
-	.info-menu {
-		width: 100%;
-		margin: auto;
-		display: table;
+    h3 {
+      font-size: 20px;
+      padding: 0px;
+      margin: 0px;
+    }
 
+    ul {
+      padding-left: 0px;
+    }
 
-			h3 {
-			   font-size: 20px;
-				padding: 0px;
-				margin: 0px;
-			}
+    li.selected {
+      text-decoration: underline;
+    }
 
-			ul {
-				padding-left: 0px;
-			}
+    li {
+      list-style: none;
+      a {
+        color: white;
+        cursor: pointer;
+      }
+    }
 
-			li.selected {
-				text-decoration: underline;
-			}
+  }
 
-			li {
-				list-style: none;
-				a {
-					color:white;
-					cursor:pointer;
-				}
-			}
+  .info-logo {
+    background: url("../images/patient_blanc.png");
+    width: 100%;
+    height: 90px;
+    background-size: 90px;
+    background-position-x: 20px;
+    background-repeat: no-repeat;
 
-	}
+  }
 
+  .content {
+    background-color: white;
+    color: rgb(82, 198, 179);
 
+    h3 {
+      text-align: center;
 
-	.info-logo {
-		background:url("../resources/patient_blanc.png");
-		width: 100%;
-	    height: 90px;
-		background-size: 90px;
-		background-position-x: 20px;
-		background-repeat: no-repeat;
+      span {
+        background: url("../images/picto_poumon.png");
+        background-repeat: no-repeat;
+        padding-left: 50px;
+        background-size: 30px;
+      }
 
-	}
+    }
 
-	.content {
-		background-color:white;
-		color:rgb(82, 198, 179);
-
-		h3 {
-			text-align:center;
-
-			span {
-				background:url("../resources/picto_poumon.png");
-				background-repeat: no-repeat;
-				padding-left: 50px;
-				background-size: 30px;
-			}
-
-		}
-
-		.carte-france {
-			background:url("../resources/carte_france.png");
-			width: 100%;
-			height: 600px;
-			background-size: 400px;
-			background-repeat: no-repeat;
-			background-position: center;
-		}
-	}
-
+    .carte-france {
+      background: url("../images/carte_france.png");
+      width: 100%;
+      height: 600px;
+      background-size: 400px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 
 }
