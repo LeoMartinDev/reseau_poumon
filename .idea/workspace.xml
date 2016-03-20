@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c90e238c-4c6e-4492-ac55-1bcfa59d9b42" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/includes/navbarsimple.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/carte_france.png" afterPath="$PROJECT_DIR$/app/images/carte_france.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/patient_blanc.png" afterPath="$PROJECT_DIR$/app/images/patient_blanc.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/picto_poumon.png" afterPath="$PROJECT_DIR$/app/images/picto_poumon.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/navbar.html" afterPath="$PROJECT_DIR$/app/views/includes/navbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
     </list>
     <ignored path="reseau_poumon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -583,7 +574,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458443813552</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="nav">
+      <created>1458459324701</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1458459324701</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
