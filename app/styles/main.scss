@@ -4,7 +4,7 @@
 
 body {
   padding: 0;
-  background-color: #52C6B3;
+  background-color: #35BA9E;
 }
 
 .browsehappy {
@@ -19,7 +19,7 @@ body {
   position: relative;
   margin-bottom: 0;
   border-radius: 0;
-  height: 100px;
+  height: 90px;
   border-bottom: 10px solid #268774;
   line-height: 90px;
  .nav-princ {
@@ -56,25 +56,42 @@ body {
   }
 }
 
-.home-logo{
-	background:url("../resources/logo.png");
-	width: 80px;
-    height: 80px;
-    background-size: cover;
-    display: block;
+.home-logo {
+  background: url("../images/logo.png");
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  display: block;
 }
 
 .nav-title {
-	color:rgb(82, 198, 179);
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 1.5em;
-
+  color: #268774;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.0em;
+  padding-left: 20px;
 }
 
 #hero {
   height: calc(80vh - 100px);
   background-color: #fff;
+}
+
+.hero_title {
+  height: calc(80vh - 100px);
+  h1 {
+    font-size: 7.5em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto 0;
+  }
+}
+
+#unite p {
+  text-transform: uppercase;
+  font-size: 1.6em;
+  color: #fff;
 }
 
 #menu {
@@ -88,12 +105,9 @@ body {
   }
 }
 
-#information {
-  height: 100vh;
-}
 
 h1 {
-  color: #52C6B3;
+  color: #35BA9E;
   font-size: 5em;
 }
 
@@ -111,15 +125,24 @@ h1 {
 }
 
 .remon_btn_default {
-    border-color: #fff;
-    color: #fff;
-    background-color: #52C6B3;
+  border-color: #fff;
+  color: #fff;
+  background-color: #35BA9E;
+}
+
+.remon_btn_default:hover {
+  color: #35BA9E;
+  background-color: #fff;
 }
 
 .remon_btn_inverse {
-  border-color: #52C6B3;
-  color: #52C6B3;
+  color: #35BA9E;
   background-color: #fff;
+}
+
+.remon_btn_inverse:hover {
+  color: #fff;
+  background-color: #35BA9E;
 }
 
 .v-align {
@@ -128,8 +151,24 @@ h1 {
   position: relative;
 }
 
+.category {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
 
+#information img {
+  padding-top: 15px;
+}
 
+#information .left {
+  padding-left: 35px;
+}
+
+#information .right {
+  padding-right: 35px;
+}
 
 section.info {
 	color:white;
@@ -259,41 +298,6 @@ section.parrain {
 		width: 26px;
 		font-size: 26px;
 		text-align: center;
-
-	}
-}
-
-section.bureau {
-	    color: white;
-		h1 {
-		margin-bottom:50px;
-		font-size:3em;
-	}
-
-	h1,h2 {
-		color:white;
-		text-transform:uppercase;
-	}
-
-	.content1 {
-		width:50%;
-		text-align:left;
-		margin:auto;
-	}
-
-	img {
-		width:100% !important;
-	}
-
-		a{
-			padding: 15px;
-			cursor: pointer;
-			margin-right: 50px;
-			span {
-				display:inline-block;
-				width:250px;
-			}
-
 
 	}
 }
