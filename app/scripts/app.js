@@ -15,8 +15,7 @@ var APP = angular
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngTouch',
-    'duScroll',
+    'ngTouch'
   ]);
 
 APP
@@ -24,9 +23,7 @@ APP
     $stateProvider
       .state('main', {
         templateUrl: 'views/main.html',
-        url: '/',
-        controller: 'MainCtrl',
-        controllerAs: 'main',
+        url: '/'
       });
-    $urlRouterProvider.otherwise("/")
+    $urlRouterProvider.otherwise("/"); 
   });
