@@ -15,8 +15,8 @@ angular.module('remonApp')
       'Karma'
     ];
 
-    $scope.move = function() {
-      $state.go('info');
+    $scope.move = function(l) {
+      $state.go(l);
     }
 
   }]);

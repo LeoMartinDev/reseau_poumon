@@ -35,7 +35,7 @@
         <div class="col-lg-6 text-left" style="color: white;">
           <h2 class="category" style="padding-bottom:15px;">PATIENTS</h2>
           <img src="images/picto_entourage.png" width="300" height="300">
-          <h3 class="left" ng-click="move()" style="cursor:pointer;"><i>Ma maladie</i></h3>
+          <h3 class="left" ng-click="move('info')" style="cursor:pointer;"><i>Ma maladie</i></h3>
           <h3 class="left"><i>Mon traitement</i></h3>
           <h3 class="left"><i>Mes droits</i></h3>
         </div>
@@ -74,9 +74,9 @@
         </div>
         <div class="col-lg-6 text-center" style="height: 600px;"><img src="images/outils.png" alt=""><h1 class="category">boîte à outils</h1>
           <p>> éléments pratiques</p></div>
-        <div class="col-lg-6 text-center"><img src="images/parrain.png" alt=""><h1 class="category">parrainage</h1>
+        <div class="col-lg-6 text-center" style="cursor:pointer" ng-click="move('p')"><img src="images/parrain.png" alt=""><h1 class="category">parrainage</h1>
           <p>> Trouvez un parrain ou un filleul</p></div>
-        <div class="col-lg-6 text-center"><img src="images/bureau.png" alt=""><h1 class="category">bureau virtuel</h1>
+        <div class="col-lg-6 text-center" style="cursor:pointer" ng-click="move('b')"><img src="images/bureau.png" alt=""><h1 class="category">bureau virtuel</h1>
           <p>> Association 2.0, participez à distance à des réunions</p></div>
       </div>
     </div>

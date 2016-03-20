@@ -30,6 +30,12 @@ APP
       .state('info', {
         templateUrl: 'views/info.html',
         url: '/info',
+      }).state('p', {
+        templateUrl: 'views/parrain.html',
+        url: '/p',
+      }).state('b', {
+        templateUrl: 'views/bureau.html',
+        url: '/b',
       });
     $urlRouterProvider.otherwise("/");
   });
