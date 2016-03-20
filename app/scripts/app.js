@@ -36,6 +36,18 @@ APP
       }).state('b', {
         templateUrl: 'views/bureau.html',
         url: '/b',
+      }).state('signIn', {
+        templateUrl: 'views/signIn.html',
+        url: '/signIn/:type',
+        controller: 'SignInCtrl',
+        controllerAs: 'SignIn'
+      })
+      .state('choose', {
+        templateUrl: 'views/choose.html',
+        url: '/choose',
+        controller: 'SignInCtrl',
+        controllerAs: 'SignIn'
       });
+
     $urlRouterProvider.otherwise('/');
   });

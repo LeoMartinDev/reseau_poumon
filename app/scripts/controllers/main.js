@@ -19,4 +19,16 @@ angular.module('remonApp')
       $state.go(l);
     }
 
+  }]).controller('SignInCtrl', ['$scope', '$state', '$stateParams',function ($scope, $state, $stateParams) {
+    this.awesomeThings = [
+      'HTML5 Boilerplate',
+      'AngularJS',
+      'Karma'
+    ];
+    if ($stateParams.type != undefined)
+    	$scope.userType = $stateParams.type;
+    $scope.setType = function (type) {
+    	$state.go('signIn', {type});
+    };
   }]);
+

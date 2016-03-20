@@ -94,6 +94,39 @@ body {
   color: #fff;
 }
 
+#signIn {
+  margin-top: 50px;
+  color: #ffffff;
+  font-size: 3em;
+  .re-mon-title {
+    font-size: 2em;
+  }
+  .re-mon-image {
+    background-color: white;
+    height: 10cm;
+    width: 10cm;
+    margin-right: 30px;
+  }
+  .re-mon-image-neg {
+    background-color: #52c6b3;
+    height: 10cm;
+    width: 10cm;
+    margin-right: 30px;
+  }
+  input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .re-mon-save-btn {
+    color: #15baa0;
+    text-align: center;
+    background-color: white;
+  }
+  .re-mon-inpt {
+    color: black;
+  }
+}
+
 #menu {
   height: 20vh;
   button {
