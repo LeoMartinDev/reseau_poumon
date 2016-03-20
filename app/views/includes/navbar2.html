@@ -1,0 +1,19 @@
+<nav class="navbar navbar-default" ng-controller="NavbarCtrl">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-1"><a ui-sref="main" class="home-logo"></a></div>
+      <div class="col-sm-4 nav-title">Mon réseau poumon</div>
+      <div class="col-sm-7 text-center nav-menu">
+        <span ng-if="!$state.is('main')">
+          <a class=""><span>S'informer</span></a>
+          <a><span>Partager</span></a>
+          <a class="selected"><span>S'unir</span></a>
+        </span>
+        <span ng-if="$state.is('main')">
+          <a> Se connecter</a>
+          <a> Créer un compte</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</nav>
