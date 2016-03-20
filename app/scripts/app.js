@@ -23,8 +23,13 @@ APP
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('main', {
+        controller: 'MainCtrl',
         templateUrl: 'views/main.html',
-        url: '/'
+        url: '/',
+      })
+      .state('info', {
+        templateUrl: 'views/info.html',
+        url: '/info',
       });
     $urlRouterProvider.otherwise("/");
   });
