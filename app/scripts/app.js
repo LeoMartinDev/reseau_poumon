@@ -37,5 +37,5 @@ APP
         templateUrl: 'views/bureau.html',
         url: '/b',
       });
-    $urlRouterProvider.otherwise("/");
+    $urlRouterProvider.otherwise('/');
   });
