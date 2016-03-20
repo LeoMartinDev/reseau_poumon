@@ -22,7 +22,7 @@ var APP = angular
   APP.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('main', {
-        templateUrl: 'views/info.html',
+        templateUrl: 'views/main.html',
         url: '/'
       });
     $urlRouterProvider.otherwise("/"); 
