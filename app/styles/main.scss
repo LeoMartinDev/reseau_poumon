@@ -262,4 +262,39 @@ section.parrain {
 		
 	}
 }
+
+section.bureau {
+	    color: white;
+		h1 {
+		margin-bottom:50px; 
+		font-size:3em; 
+	}
+	
+	h1,h2 {
+		color:white; 
+		text-transform:uppercase; 
+	}
+	
+	.content1 {
+		width:50%;
+		text-align:left; 
+		margin:auto; 
+	}
+	
+	img {
+		width:100% !important; 
+	}
+		
+		a{
+			padding: 15px;
+			cursor: pointer;
+			margin-right: 50px; 
+			span {
+				display:inline-block; 
+				width:250px; 
+			}
+		
+
+	}
+}
 	
