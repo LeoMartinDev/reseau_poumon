@@ -1,4 +1,5 @@
 // bower:scss
+@import "components-font-awesome/scss/font-awesome.scss";
 // endbower
 
 body {
@@ -138,7 +139,7 @@ section.info {
 	
 	h1 {
 		margin-bottom:50px; 
-		font-size: 4em;
+		font-size:3em; 	
 	}
 	
 	h1,h2 {
@@ -217,3 +218,48 @@ section.info {
 
 
 }
+
+section.parrain {
+	    color: white;
+		
+	#imgs {
+		display:none; 
+		
+	}
+	.container-fluid{
+		width:80%; 
+	}
+	
+	h1 {
+		margin-bottom:50px; 
+		font-size:3em; 
+	}
+	
+	h1,h2 {
+		color:white; 
+		text-transform:uppercase; 
+	}
+	
+	img {
+		margin-bottom:50px; 
+		margin-right:50px; 
+		cursor:pointer; 
+		
+	}
+	
+	input {
+		color:black; 
+	}
+	
+	.form-ok {
+		background-color: #0F8774;
+		height: 26px;
+		display: inline-block;
+		position: absolute;
+		width: 26px;
+		font-size: 26px;
+		text-align: center;
+		
+	}
+}
+	
